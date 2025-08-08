@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Briefing do Projeto Integrador SENAI - Formulário para informações iniciais do projeto">
+    <meta name="keywords" content="SENAI, briefing, projeto integrador, formulário, equipe">
+    <meta name="author" content="SENAI">
+    
+    <title>Briefing do Projeto - Projeto Integrador SENAI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo_senai.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/logo_senai.png" alt="SENAI" class="logo">
+                <nav class="nav-desktop">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documentos.html" class="nav-link">Documentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="briefing.html" class="nav-link active">Briefing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="section-hero">
+            <div class="container">
+                <div class="hero-content animate-on-scroll">
+                    <h1>Briefing do Projeto</h1>
+                    <p class="hero-subtitle">Preencha as informações iniciais do seu Projeto Integrador</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8" style="margin: 0 auto;">
+                        <div class="form-container animate-on-scroll">
+                            <div class="card">
+                                <div class="form-header text-center mb-4">
+                                    <h2>Informações do Projeto</h2>
+                                    <p>Preencha todos os campos obrigatórios (*) para registrar seu projeto</p>
+                                </div>
+
+                                <form id="briefing-form" class="briefing-form">
+                                    <!-- Informações do Projeto -->
+                                    <div class="form-section">
+                                        <h3>Dados do Projeto</h3>
+                                        
+                                        <div class="form-group">
+                                            <label for="projeto-nome" class="form-label">Nome do Projeto *</label>
+                                            <input type="text" id="projeto-nome" name="projeto-nome" class="form-control" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="desafio" class="form-label">Desafio/Tema *</label>
+                                            <textarea id="desafio" name="desafio" class="form-control" rows="4" placeholder="Descreva o desafio ou tema que seu projeto pretende abordar" required></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="objetivos" class="form-label">Objetivos Principais *</label>
+                                            <textarea id="objetivos" name="objetivos" class="form-control" rows="4" placeholder="Liste os principais objetivos que seu projeto pretende alcançar" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Informações da Equipe -->
+                                    <div class="form-section">
+                                        <h3>Informações da Equipe</h3>
+                                        
+                                        <!-- Integrante 1 -->
+                                        <div class="team-member">
+                                            <h4>Integrante 1 (Responsável) *</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante1-nome" class="form-label">Nome Completo *</label>
+                                                        <input type="text" id="integrante1-nome" name="integrante1-nome" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante1-curso" class="form-label">Curso *</label>
+                                                        <input type="text" id="integrante1-curso" name="integrante1-curso" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Integrante 2 -->
+                                        <div class="team-member">
+                                            <h4>Integrante 2</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante2-nome" class="form-label">Nome Completo</label>
+                                                        <input type="text" id="integrante2-nome" name="integrante2-nome" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante2-curso" class="form-label">Curso</label>
+                                                        <input type="text" id="integrante2-curso" name="integrante2-curso" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Integrante 3 -->
+                                        <div class="team-member">
+                                            <h4>Integrante 3</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante3-nome" class="form-label">Nome Completo</label>
+                                                        <input type="text" id="integrante3-nome" name="integrante3-nome" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante3-curso" class="form-label">Curso</label>
+                                                        <input type="text" id="integrante3-curso" name="integrante3-curso" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Integrante 4 -->
+                                        <div class="team-member">
+                                            <h4>Integrante 4</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante4-nome" class="form-label">Nome Completo</label>
+                                                        <input type="text" id="integrante4-nome" name="integrante4-nome" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante4-curso" class="form-label">Curso</label>
+                                                        <input type="text" id="integrante4-curso" name="integrante4-curso" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Integrante 5 -->
+                                        <div class="team-member">
+                                            <h4>Integrante 5</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante5-nome" class="form-label">Nome Completo</label>
+                                                        <input type="text" id="integrante5-nome" name="integrante5-nome" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="integrante5-curso" class="form-label">Curso</label>
+                                                        <input type="text" id="integrante5-curso" name="integrante5-curso" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Desenvolvimento -->
+                                    <div class="form-section">
+                                        <h3>Desenvolvimento</h3>
+                                        
+                                        <div class="form-group">
+                                            <label for="justificativa" class="form-label">Justificativa</label>
+                                            <textarea id="justificativa" name="justificativa" class="form-control" rows="4" placeholder="Por que este projeto é importante? Qual problema ele resolve?"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ferramentas" class="form-label">Ferramentas e Recursos Previstos</label>
+                                            <textarea id="ferramentas" name="ferramentas" class="form-control" rows="4" placeholder="Quais ferramentas, tecnologias e recursos serão utilizados no desenvolvimento do projeto?"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="cronograma" class="form-label">Cronograma Previsto</label>
+                                            <textarea id="cronograma" name="cronograma" class="form-control" rows="4" placeholder="Principais marcos e prazos do projeto"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contato -->
+                                    <div class="form-section">
+                                        <h3>Informações de Contato</h3>
+                                        
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="email" class="form-label">E-mail do Responsável</label>
+                                                    <input type="email" id="email" name="email" class="form-control" placeholder="email@exemplo.com">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="telefone" class="form-label">Telefone (Opcional)</label>
+                                                    <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(11) 99999-9999">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botões -->
+                                    <div class="form-actions text-center">
+                                        <button type="submit" class="btn btn-primary">
+                                            <img src="images/icons/icon_form.png" alt="Enviar" class="icon" style="margin-right: 8px; filter: brightness(0) invert(1);">
+                                            Enviar Briefing
+                                        </button>
+                                        <button type="reset" class="btn btn-outline">Limpar Formulário</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="animate-on-scroll">Dicas para Preenchimento</h2>
+                    <p class="animate-on-scroll">Orientações para preencher o briefing de forma eficiente</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="tip-card animate-on-scroll">
+                            <div class="card text-center">
+                                <img src="images/icons/icon_pdf.png" alt="Planejamento" class="icon-lg mb-3">
+                                <h4>Seja Específico</h4>
+                                <p>Descreva seu projeto de forma clara e objetiva. Evite termos muito técnicos ou genéricos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="tip-card animate-on-scroll">
+                            <div class="card text-center">
+                                <img src="images/icons/icon_form.png" alt="Equipe" class="icon-lg mb-3">
+                                <h4>Defina a Equipe</h4>
+                                <p>Inclua todos os integrantes da equipe, mesmo que alguns campos sejam opcionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="tip-card animate-on-scroll">
+                            <div class="card text-center">
+                                <img src="images/icons/icon_excel.png" alt="Revisão" class="icon-lg mb-3">
+                                <h4>Revise Antes de Enviar</h4>
+                                <p>Verifique todas as informações antes de submeter o formulário. Você pode salvar e editar depois.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 SENAI - Serviço Nacional de Aprendizagem Industrial. Todos os direitos reservados.</p>
+                <p>Desenvolvido para apoiar estudantes no desenvolvimento de Projetos Integradores.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
